@@ -1,0 +1,46 @@
+body {
+  box-sizing: border-box;
+  background-color: rgb(252, 244, 233);
+}
+
+header {
+  height: 100vh;
+  background: linear-gradient(
+    /* rgba(243, 208, 227, 0.808) nebo */ rgba(240, 204, 204, 0.658),
+    rgba(187, 185, 185, 0.527)
+  );
+}
+
+.navigation {
+  display: flex;
+  max-width: 90%;
+  justify-content: center;
+}
+
+.navigation > li {
+  list-style-type: none;
+  padding: 10px;
+  border-bottom: 1px solid rgb(105, 58, 4);
+}
+
+.navigation li > a {
+  text-decoration: none;
+  padding: 10px 2px;
+  margin-top: 10px;
+  color: rgb(105, 58, 4);
+  font-weight: 600;
+}
+
+.navigation a:active,
+.navigation a:hover,
+.navigation a:focus {
+  font-size: 18px;
+  background-color: rgb(105, 58, 4);
+  color: snow;
+  transition: all 0.5s;
+}
+
+.navigation a:link,
+.navigation a:visited {
+  text-decoration: none;
+}
