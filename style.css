@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   box-sizing: border-box;
   background-color: rgb(252, 244, 233);
@@ -5,15 +10,28 @@ body {
 
 header {
   height: 100vh;
+  font-size: 20px;
   background: linear-gradient(
     /* rgba(243, 208, 227, 0.808) nebo */ rgba(240, 204, 204, 0.658),
     rgba(187, 185, 185, 0.527)
   );
 }
 
+.logo{
+  border-radius: 50%;
+  max-width: 13%;
+  position: absolute;
+  top: 2%;
+  left: 3%;
+  transform: rotate(-20deg);
+
+}
+
 .navigation {
+  padding-top: 4%;
+  margin-bottom: 3%;
   display: flex;
-  max-width: 90%;
+  flex: 1;
   justify-content: center;
 }
 
@@ -25,8 +43,7 @@ header {
 
 .navigation li > a {
   text-decoration: none;
-  padding: 10px 2px;
-  margin-top: 10px;
+  padding: 10px 5px;
   color: rgb(105, 58, 4);
   font-weight: 600;
 }
@@ -34,10 +51,12 @@ header {
 .navigation a:active,
 .navigation a:hover,
 .navigation a:focus {
-  font-size: 18px;
+  font-size: 22px;
   background-color: rgb(105, 58, 4);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   color: snow;
-  transition: all 0.5s;
+  transition: all 0.8s;
 }
 
 .navigation a:link,

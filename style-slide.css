@@ -12,7 +12,7 @@
   /**tohle jsem sem přidala ze spodu z body*/
   max-width: 54rem;
   margin: 0 auto;
-  margin-bottom: 2%;
+ 
 }
 .c-mm::before {
   content: "";
