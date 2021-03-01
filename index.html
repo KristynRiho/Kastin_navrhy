@@ -1,108 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kastin | Ruční výroba</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style-slide.css" />
+    <link rel="shortcut icon" href="img/favi.jpg" type="image/jpg" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kastin | Ruční výroba</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="style-slide.css">
-  <link rel="shortcut icon" href="img/favi.jpg" type="image/jpg">
-</head>
-
-<body>
-
-  <header>
-    <!-- logo -->
-    <img class="logo" src="img/logo.jpg" alt="logo Kastin">
-    <!-- navigation -->
-    <nav>
-      <ul class="navigation">
-        <li><a href="#">Můj příběh</a></li>
-        <li><a href="#">Výrobky</a></li>
-        <li><a href="#">Fotogalerie</a></li>
-        <li><a href="#">Aktuality</a></li>
-        <!-- <li><a href="#">Skladem - ihned k prodeji</a></li>
+  <body>
+    <header>
+      <!-- logo -->
+      <img class="logo" src="img/logo-hnede.png" alt="logo Kastin" />
+      <!-- navigation -->
+      <nav>
+        <ul class="navigation">
+          <li><a href="#aboutMe">Můj příběh</a></li>
+          <li><a href="#">Výrobky</a></li>
+          <li><a href="#">Aktuality</a></li>
+          <li><a href="#">Fotogalerie</a></li>
+          <!-- <li><a href="#">Skladem - ihned k prodeji</a></li>
     <li><a href="#">Kde se můžeme potkat</a></li> -->
-        <li><a href="#">Recenze</a></li>
-        <li><a href="#">Obchodní podmínky</a></li>
-        <li><a href="#">Kontakt</a></li>
-      </ul>
+          <li><a href="#">Recenze</a></li>
+          <li><a href="#">Obchodní podmínky</a></li>
+          <li><a href="#">Kontakt</a></li>
+        </ul>
+      </nav>
 
-    </nav>
+      <div class="c-mm">
+        <details>
+          <summary class="c-mm__play">
+            <span data-css-icon="play"><i></i></span>
+          </summary>
+          <span hidden></span>
+        </details>
+        <div class="c-mm__inner">
+          <figure
+            class="c-mm__frame"
+            style="--animn: kenburns-bottom-left; --index: 0"
+          >
+            <img class="c-mm__img" src="img/1.jpg" />
+            <figcaption data-caption="top right">
+              Ruční výroba
+              <div></div>
+            </figcaption>
+          </figure>
 
+          <figure class="c-mm__frame" style="--animn: kenburns-top; --index: 1">
+            <img class="c-mm__img" src="img/2.jpg" />
+            <figcaption data-caption="top left">Výroba na zakázku</figcaption>
+          </figure>
 
-    <div class="c-mm">
-      <details>
-        <summary class="c-mm__play"><span data-css-icon="play"><i></i></span></summary>
-        <span hidden></span>
-      </details>
-      <div class="c-mm__inner">
+          <figure
+            class="c-mm__frame"
+            style="--animn: kenburns-bottom-left; --index: 2"
+          >
+            <img class="c-mm__img" src="img/3.jpg" />
+            <figcaption data-caption="bottom left">Designová látka</figcaption>
+          </figure>
 
-        <figure class="c-mm__frame" style="--animn:kenburns-bottom-left;--index:0;">
-          <img class="c-mm__img" src="img/1.jpg" />
-          <figcaption data-caption="top right">Ruční výroba<div></div>
-          </figcaption>
-        </figure>
+          <figure class="c-mm__frame" style="--animn: kenburns-top; --index: 3">
+            <img class="c-mm__img" src="img/4.jpg" />
+            <figcaption data-caption="top left">Koženka</figcaption>
+          </figure>
 
-        <figure class="c-mm__frame" style="--animn:kenburns-top;--index:1;">
-          <img class="c-mm__img" src="img/2.jpg" />
-          <figcaption data-caption="top left">Výroba na zakázku</figcaption>
-        </figure>
+          <figure
+            class="c-mm__frame"
+            style="--animn: kenburns-bottom-left; --index: 4"
+          >
+            <img class="c-mm__img" src="img/6.jpg" />
+            <figcaption data-caption="top right">
+              Batohy
+              <div></div>
+            </figcaption>
+          </figure>
 
-        <figure class="c-mm__frame" style="--animn:kenburns-bottom-left;--index:2;">
-          <img class="c-mm__img" src="img/3.jpg" />
-          <figcaption data-caption="bottom left">Designová látka</figcaption>
-        </figure>
+          <figure class="c-mm__frame" style="--animn: kenburns-top; --index: 5">
+            <img class="c-mm__img" src="img/5.jpg" />
+            <figcaption data-caption="top left">
+              Crossbody
+              <div></div>
+            </figcaption>
+          </figure>
 
-        <figure class="c-mm__frame" style="--animn:kenburns-top;--index:3;">
-          <img class="c-mm__img" src="img/4.jpg" />
-          <figcaption data-caption="top left">Koženka</figcaption>
-        </figure>
+          <figure
+            class="c-mm__frame"
+            style="--animn: kenburns-bottom-left; --index: 6"
+          >
+            <img class="c-mm__img" src="img/7.jpg" />
+            <figcaption data-caption="bottom left">Aktovky</figcaption>
+          </figure>
 
-        <figure class="c-mm__frame" style="--animn:kenburns-bottom-left;--index:4;">
-          <img class="c-mm__img" src="img/6.jpg" />
-          <figcaption data-caption="top right">Batohy<div></div>
-          </figcaption>
-        </figure>
+          <figure class="c-mm__frame" style="--animn: kenburns-top; --index: 7">
+            <img class="c-mm__img" src="img/8.jpg" />
+            <figcaption data-caption="top right">Peněženky</figcaption>
+          </figure>
 
-        <figure class="c-mm__frame" style="--animn:kenburns-top;--index:5;">
-          <img class="c-mm__img" src="img/5.jpg" />
-          <figcaption data-caption="top left">Crossbody<div></div>
-          </figcaption>
-        </figure>
+          <figure
+            class="c-mm__frame"
+            style="--animn: kenburns-bottom-left; --index: 8"
+          >
+            <img class="c-mm__img" src="img/9.jpg" />
+            <figcaption data-caption="top left">
+              Kabelky
+              <div></div>
+            </figcaption>
+          </figure>
 
-        <figure class="c-mm__frame" style="--animn:kenburns-bottom-left;--index:6;">
-          <img class="c-mm__img" src="img/7.jpg" />
-          <figcaption data-caption="bottom left">Aktovky</figcaption>
-        </figure>
-
-        <figure class="c-mm__frame" style="--animn:kenburns-top;--index:7;">
-          <img class="c-mm__img" src="img/8.jpg" />
-          <figcaption data-caption="top right">Peněženky</figcaption>
-        </figure>
-
-        <figure class="c-mm__frame" style="--animn:kenburns-bottom-left;--index:8;">
-          <img class="c-mm__img" src="img/9.jpg" />
-          <figcaption data-caption="top left">Kabelky<div></div>
-          </figcaption>
-        </figure>
-
-        <figure class="c-mm__frame" style="--animn:kenburns-bottom-left;--index:9;">
-          <img class="c-mm__img" src="img/10.jpg" />
-          <figcaption data-caption="top right">Sety<div></div>
-          </figcaption>
-        </figure>
+          <figure
+            class="c-mm__frame"
+            style="--animn: kenburns-bottom-left; --index: 9"
+          >
+            <img class="c-mm__img" src="img/10.jpg" />
+            <figcaption data-caption="top right">
+              Sety
+              <div></div>
+            </figcaption>
+          </figure>
+        </div>
       </div>
-    </div>
-  </header>
 
+      <div class="line"></div>
+      <div class="line2"></div>
+    </header>
 
-  <main>
-
-
-  </main>
-</body>
-
+    <main>
+      <!-- SECTION - aboutMe - Můj příběh -->
+      <section id="aboutMe">
+        <h1>Můj příběh</h1>
+        <p>
+          Vítám vás na svých stránkách. Najdete tu vše, co mne baví a co mi dělá
+          radost. Ráda také udělám radost i vám výrobou výrobku dle vašich
+          přání.
+        </p>
+        <p>
+          K šití jsem se dostala ... a protože se mé výrobky líbili okolí a
+          známí po mě chtěli, abych jim také ušila tašku, peněženku atd.,
+          následně měli zájem o mé výrobky i známí mých přátelů, a tak postupně
+          začala vyrábět na zakázku i pro cizí lidi a tato práce se stala mou
+          obživou.
+        </p>
+        <p>
+          Ačkoliv mne tato práce neskutečně baví, jsem a vždy budu na 1. místě
+          maminka svých dětí. Trávím s nimi veškerý svůj volný čas, jezdíme na
+          výlety Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+          Exercitationem vitae ullam aut earum, dignissimos quidem repellat
+          recusandae sapiente molestiae sunt hic est asperiores nesciunt
+          incidunt modi error animi magnam soluta!
+        </p>
+      </section>
+    </main>
+  </body>
 </html>

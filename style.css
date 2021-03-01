@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -17,19 +17,15 @@ header {
   );
 }
 
-.logo{
-  border-radius: 50%;
-  max-width: 13%;
-  position: absolute;
-  top: 2%;
-  left: 3%;
-  transform: rotate(-20deg);
-
+.logo {
+  display: block;
+  max-width: 12%;
+  padding-top: 0.5%;
+  margin: 0px auto;
 }
 
 .navigation {
-  padding-top: 4%;
-  margin-bottom: 3%;
+  margin: 0.9% 0;
   display: flex;
   flex: 1;
   justify-content: center;
@@ -38,7 +34,7 @@ header {
 .navigation > li {
   list-style-type: none;
   padding: 10px;
-  border-bottom: 1px solid rgb(105, 58, 4);
+  border-top: 1px solid rgb(105, 58, 4);
 }
 
 .navigation li > a {
@@ -51,10 +47,9 @@ header {
 .navigation a:active,
 .navigation a:hover,
 .navigation a:focus {
-  font-size: 22px;
   background-color: rgb(105, 58, 4);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   color: snow;
   transition: all 0.8s;
 }
@@ -62,4 +57,13 @@ header {
 .navigation a:link,
 .navigation a:visited {
   text-decoration: none;
+}
+
+/*** MAIN ***/
+#aboutMe {
+  background: linear-gradient(
+    rgba(187, 185, 185, 0.527),
+    rgba(240, 204, 204, 0.658)
+  );
+  text-align: center;
 }

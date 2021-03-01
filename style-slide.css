@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Castoro&family=Smythe&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Castoro&family=Smythe&display=swap');
 .c-mm {
   --h: 9;
   --w: 16;
@@ -12,10 +12,9 @@
   /**tohle jsem sem přidala ze spodu z body*/
   max-width: 54rem;
   margin: 0 auto;
- 
 }
 .c-mm::before {
-  content: "";
+  content: '';
   display: block;
   padding-bottom: calc(var(--h) / var(--w) * 100%);
 }
@@ -26,8 +25,9 @@
   --t: initial;
 
   bottom: var(--b);
-  color: rgba(99, 98, 98, 0.904);
-  font-family: "Bebas Neue", sans-serif;
+  color: rgb(105, 8, 4);
+  text-shadow: 1px 1px 2px gold; /* rgba(99, 98, 98, 0.904);*/
+  font-family: 'Bebas Neue', sans-serif;
   font-size: clamp(1rem, 10vw, 4rem);
   left: var(--l);
   line-height: 1;
@@ -37,23 +37,23 @@
 }
 [data-caption] div,
 [data-filter] div {
-  font-family: "Castoro", serif;
+  font-family: 'Castoro', serif;
   font-size: 50%;
 }
 
-[data-caption*="bottom"] {
+[data-caption*='bottom'] {
   --b: var(--dist);
   --t: auto;
 }
-[data-caption*="left"] {
+[data-caption*='left'] {
   --l: var(--dist);
   --r: auto;
 }
-[data-caption*="right"] {
+[data-caption*='right'] {
   --l: auto;
   --r: var(--dist);
 }
-[data-caption*="top"] {
+[data-caption*='top'] {
   --b: auto;
   --t: var(--dist);
 }
@@ -158,18 +158,18 @@
 }
 
 /* CHECKBOX-HACK STATE */
-[name="slideshow"]:checked ~ .c-mm__inner .c-mm__frame {
+[name='slideshow']:checked ~ .c-mm__inner .c-mm__frame {
   --animps: running;
   --img-animps: running;
 }
-[name="slideshow"]:not(:checked) ~ .c-mm__inner .c-mm__frame {
+[name='slideshow']:not(:checked) ~ .c-mm__inner .c-mm__frame {
   --animps: paused;
   --img-animps: paused !important;
 }
-[name="slideshow"]:not(:checked) ~ .c-mm__inner .c-mm__frame:first-of-type {
+[name='slideshow']:not(:checked) ~ .c-mm__inner .c-mm__frame:first-of-type {
   opacity: 1;
 }
-[name="slideshow"]:checked + label [data-css-icon*="play"] i::after {
+[name='slideshow']:checked + label [data-css-icon*='play'] i::after {
   --cpa: polygon(
     40% 0%,
     0% 0%,
@@ -196,7 +196,7 @@ details:not([open]) ~ .c-mm__inner .c-mm__frame {
 details:not([open]) ~ .c-mm__inner .c-mm__frame:first-of-type {
   opacity: 1;
 }
-details[open] summary [data-css-icon*="play"] i::after {
+details[open] summary [data-css-icon*='play'] i::after {
   --cpa: polygon(
     40% 0%,
     0% 0%,
@@ -352,13 +352,13 @@ summary::-webkit-details-marker {
   --w: var(--icon-size);
   background-color: var(--bgcl);
   clip-path: var(--cpa);
-  content: "";
+  content: '';
   display: inline-block;
   height: var(--h);
   margin: 0;
   width: var(--w);
 }
-[data-css-icon*="play"] i::after {
+[data-css-icon*='play'] i::after {
   --bgcl: var(--c);
   --cpa: polygon(16% 0%, 15% 100%, 100% 50%);
 }
